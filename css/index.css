@@ -47,9 +47,12 @@ h1.title {
   color: #EEAC9E;
 }
 
-#journey {
-  
+.title-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
+
 /* image */
 .img-fluid {
   width: 100%
