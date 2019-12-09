@@ -26,6 +26,8 @@
   opacity: 40%;
 }
 
+/* text & fonts */
+
 .text {
   color: white;
   font-size: 100px;
@@ -37,3 +39,25 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+h1.title {
+  font-weight: 100;
+  font-family: 'Quicksand', sans-serif;
+  opacity: 1.0;
+  color: #EEAC9E;
+}
+
+#journey {
+  
+}
+/* image */
+.img-fluid {
+  width: 100%
+  height: auto;
+}
+
+#bts-banner {
+  width: 100%;
+  height: auto;
+}
+
