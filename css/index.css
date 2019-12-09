@@ -64,6 +64,16 @@ h1.title {
   height: auto;
 }
 
+p, .list {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8
+}
+
+ul.list {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
 p.bio-container {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -71,7 +81,8 @@ p.bio-container {
   margin-right: 20px;
 }
 
-a.visited, a.active, a.hover, a.link {
+
+a:visited, a:active, a:hover, a:link, h1.title:visited {
   color: #EEAC9E;
 }
 
