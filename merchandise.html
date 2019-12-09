@@ -50,18 +50,16 @@
     <button class="btn active" onclick="filterSelection('all')"> Show all</button>
     <button class="btn" onclick="filterSelection('Shirts')"> Shirts</button>
     <button class="btn" onclick="filterSelection('Figurines')"> Figurines</button>
-    <button class="btn" onclick="filterSelection('Poster')"> Poster</button>
     <button class="btn" onclick="filterSelection('Hats')"> Hats</button>
   </div>
 
   <div class="container">
-    <div class="filterDiv Shirts"><img src="imgs/bts-hoodie.jpg"/></div>
-    <div class="filterDiv Poster"><img src="imgs/bts-hoodie.jpg"/></div>
-    <div class="filterDiv Hats"><img src="imgs/bts-hat.jpg"></div>
-    <div class="filterDiv Hats"><img src="imgs/bts-chimmy.jpg"></div>
-    <div class="filterDiv Hats"><img src="imgs/bts-hat-ugly.jpeg"></div>
-    <div class="filterDiv Figurines"><img src="imgs/bts-figures.jpg"></div>
-    <div class="filterDiv Figurines"><img src="imgs/bts-figures-2.jpg"></div>
+    <div class="filterDiv Shirts"><img src="imgs/bts-hoodie.jpeg"/ width="300px"></div>
+    <div class="filterDiv Hats"><img src="imgs/bts-hat.jpg" width="300px"></div>
+    <div class="filterDiv Hats"><img src="imgs/bts-chimmy.jpg" width="300px"></div>
+    <div class="filterDiv Hats"><img src="imgs/bts-hat-ugly.jpeg" width="300px"></div>
+    <div class="filterDiv Figurines"><img src="imgs/bts-figures.jpg" width="300px"></div>
+    <div class="filterDiv Figurines"><img src="imgs/bts-figures-2.jpg" width="300px"></div>
   </div>
 
   <script>
@@ -71,12 +69,12 @@
     x = document.getElementsByClassName("filterDiv");
     if (c == "all") c = "";
     for (i = 0; i < x.length; i++) {
-      w3RemoveClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      remove(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) add(x[i], "show");
     }
   }
 
-  function w3AddClass(element, name) {
+  function add(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");
     arr2 = name.split(" ");
@@ -85,7 +83,7 @@
     }
   }
 
-  function w3RemoveClass(element, name) {
+  function remove(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");
     arr2 = name.split(" ");

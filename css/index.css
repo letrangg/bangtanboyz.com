@@ -128,7 +128,7 @@ p.bio-container {
   display: flex;
   align-items: center;
   justify-content: center;
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 /* albums */
@@ -166,21 +166,16 @@ p.bio-container {
   .column {
     -ms-flex: 100%;
     flex: 100%;
-    max-width: 100%;
-    align-content: center;
   }
 }
 
-.filters {
+.filterDiv {
   float: left;
-  background-color: #2196F3;
   color: #ffffff;
-  width: 100px;
+  width: 100%;
   line-height: 100px;
-  text-align: center;
   margin: 2px;
   display: none;
-  align-content: center;
 }
 
 .show {
@@ -188,17 +183,19 @@ p.bio-container {
 }
 
 .container {
-  margin-top: 20px;
-  overflow: hidden;
-  align-content: center;
+  flex-wrap: break; 
+  display: flex;
+  flex-direction: row;
+  right: 60px;
+  width: 100%;
 }
 
 /* Style the buttons */
 .btn {
   border: none;
   outline: none;
-  padding: 12px 16px;
   background-color: #f1f1f1;
+  font-family: 'Lato', sans-serif;
   cursor: pointer;
 }
 
